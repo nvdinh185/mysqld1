@@ -8,7 +8,6 @@ const conn = mysql.createConnection({
     database: "shophoa2"
 });
 
-
 // node native promisify
 const query = util.promisify(conn.query).bind(conn);
 

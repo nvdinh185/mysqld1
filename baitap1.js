@@ -8,7 +8,6 @@ const conn = mysql.createConnection({
     database: "tintuc"
 });
 
-
 // node native promisify
 const query = util.promisify(conn.query).bind(conn);
 
